@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">#2_SingleScreenApp</string>
+    <string name="bizTitleMessage">Color &amp; Beauty Studio</string>
+    <string name="bizSubtitleMessage">Professional Color Consultancy &amp; Style Coaching</string>
+    <string name="bizDescriptionMessage">We help people in finding the colors that highlight their natural beauty and in emphasizing their physique with most preferred clothing.
+        \n\n Our clients gain confidence, get more out of shopping, spending less money and saving time. Perfect your appearance with us!</string>
+    <string name="bizEmailMessage">colorandbeautystudio@gmail.com</string>
+    <string name="bizPhoneMessage">+36 70 777 7777</string>
+</resources>
