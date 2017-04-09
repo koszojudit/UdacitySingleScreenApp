@@ -12,54 +12,71 @@
         <item name="android:textColor">@color/colorText</item>
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textStyle">normal</item>
-        <item name="android:textSize">28sp</item>
+        <item name="android:textSize">@dimen/title_textSize</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginTop">@dimen/title_marginTop</item>
     </style>
 
     <style name="bizSubtitleStyle">
         <item name="android:textColor">@color/colorText</item>
         <item name="android:fontFamily">sans-serif-regular</item>
         <item name="android:textStyle">normal</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/subtitle_textSize</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginBottom">@dimen/subtitle_marginBottom</item>
     </style>
 
     <style name="bizDescriptionStyle">
         <item name="android:textColor">@color/colorText</item>
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textStyle">normal</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/description_textSize</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_margin">16dp</item>
+        <item name="android:layout_margin">@dimen/description_margin</item>
     </style>
 
     <style name="bizEmailStyle">
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textStyle">normal</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/email_textSize</item>
         <item name="android:gravity">left</item>
-        <item name="android:layout_marginBottom">16dp</item>
-        <item name="android:layout_marginLeft">32dp</item>
-        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:layout_marginTop">@dimen/email_marginTop</item>
+        <item name="android:layout_marginBottom">@dimen/email_marginBottom</item>
+        <item name="android:layout_marginLeft">@dimen/email_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/email_marginRight</item>
         <item name="android:drawableLeft">@drawable/ic_email_black_24</item>
-        <item name="android:drawablePadding">24dp</item>
+        <item name="android:drawablePadding">@dimen/email_padding</item>
     </style>
 
     <style name="bizPhoneStyle">
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textStyle">normal</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/phone_textSize</item>
         <item name="android:gravity">left</item>
-        <item name="android:layout_marginBottom">16dp</item>
-        <item name="android:layout_marginLeft">32dp</item>
-        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:layout_marginBottom">@dimen/phone_marginBottom</item>
+        <item name="android:layout_marginLeft">@dimen/phone_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/phone_marginRight</item>
         <item name="android:drawableLeft">@drawable/ic_call_black_24</item>
-        <item name="android:drawablePadding">24dp</item>
+        <item name="android:drawablePadding">@dimen/phone_padding</item>
     </style>
 
+    <style name="bizLogoStyle">
+        <item name="android:layout_width">@dimen/bizLogoWidth</item>
+        <item name="android:layout_height">@dimen/bizLogoHeight</item>
+        <item name="android:padding">@dimen/bizLogo_padding</item>
+        <item name="android:src">@drawable/cb_logo</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@drawable/cb_logo_bgrd</item>
+        <item name="android:elevation">@dimen/bizLogo_elevation</item>
+    </style>
+
+    <style name="fabStyle">
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:tint">@color/colorBgrd</item>
+    </style>
 
 </resources>

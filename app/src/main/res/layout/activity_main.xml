@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.a2_singlescreenapp.MainActivity" >
+
+    <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.android.a2_singlescreenapp.MainActivity">
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,37 +26,27 @@
 
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/fabEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="24dp"
+                style="@style/fabStyle"
                 android:clickable="true"
+                android:onClick="composeEmail"
                 android:src="@drawable/ic_email_black_24"
-                android:tint="#ffffff"
                 app:fabSize="normal"
                 app:layout_anchor="@id/top"
                 app:layout_anchorGravity="bottom|left|end" />
 
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/fabCall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="24dp"
+                style="@style/fabStyle"
                 android:clickable="true"
+                android:onClick="dialNumber"
                 android:src="@drawable/ic_call_black_24"
-                android:tint="#ffffff"
                 app:fabSize="normal"
                 app:layout_anchor="@id/top"
                 app:layout_anchorGravity="bottom|right|end" />
 
             <ImageButton
-                android:id="@+id/user_profile_photo"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:background="@drawable/cb_logo_bgrd"
-                android:elevation="15dp"
-                android:padding="5dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/cb_logo"
+                android:id="@+id/bizLogo"
+                style="@style/bizLogoStyle"
                 app:layout_anchor="@id/top"
                 app:layout_anchorGravity="bottom|center" />
 
@@ -113,14 +109,21 @@
             style="@style/bizEmailStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/bizEmailMessage" />
+            android:text="@string/bizEmailMessage"
+            android:linksClickable="true"
+            android:onClick="composeEmail"/>
 
         <TextView
             android:id="@+id/bizPhone"
             style="@style/bizPhoneStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/bizPhoneMessage" />
+            android:text="@string/bizPhoneMessage"
+            android:linksClickable="true"
+            android:onClick="dialNumber"/>
 
     </LinearLayout>
 
+</LinearLayout>
+
+    </ScrollView>

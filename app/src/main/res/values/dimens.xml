@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="bizLogoWidth">120dp</dimen>
+    <dimen name="bizLogoHeight">120dp</dimen>
+
+    <dimen name="title_textSize">28sp</dimen>
+    <dimen name="subtitle_textSize">14sp</dimen>
+    <dimen name="description_textSize">14sp</dimen>
+    <dimen name="email_textSize">16sp</dimen>
+    <dimen name="phone_textSize">16sp</dimen>
+
+    <dimen name="title_marginTop">8dp</dimen>
+    <dimen name="subtitle_marginBottom">16dp</dimen>
+    <dimen name="description_margin">16dp</dimen>
+    <dimen name="email_marginTop">16dp</dimen>
+    <dimen name="email_marginBottom">16dp</dimen>
+    <dimen name="email_marginLeft">32dp</dimen>
+    <dimen name="email_marginRight">32dp</dimen>
+
+    <dimen name="phone_marginBottom">16dp</dimen>
+    <dimen name="phone_marginLeft">32dp</dimen>
+    <dimen name="phone_marginRight">32dp</dimen>
+
+    <dimen name="email_padding">24dp</dimen>
+    <dimen name="phone_padding">24dp</dimen>
+    <dimen name="bizLogo_padding">5dp</dimen>
+
+    <dimen name="bizLogo_elevation">8dp</dimen>
+</resources>
