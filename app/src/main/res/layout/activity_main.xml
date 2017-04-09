@@ -1,129 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    android:fillViewport="true"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.a2_singlescreenapp.MainActivity" >
-
-    <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.a2_singlescreenapp.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.4"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <android.support.design.widget.CoordinatorLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical">
 
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fabEmail"
-                style="@style/fabStyle"
-                android:clickable="true"
-                android:onClick="composeEmail"
-                android:src="@drawable/ic_email_black_24"
-                app:fabSize="normal"
-                app:layout_anchor="@id/top"
-                app:layout_anchorGravity="bottom|left|end" />
-
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fabCall"
-                style="@style/fabStyle"
-                android:clickable="true"
-                android:onClick="dialNumber"
-                android:src="@drawable/ic_call_black_24"
-                app:fabSize="normal"
-                app:layout_anchor="@id/top"
-                app:layout_anchorGravity="bottom|right|end" />
-
-            <ImageButton
-                android:id="@+id/bizLogo"
-                style="@style/bizLogoStyle"
-                app:layout_anchor="@id/top"
-                app:layout_anchorGravity="bottom|center" />
-
-            <LinearLayout
+            <android.support.design.widget.CoordinatorLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fabEmail"
+                    style="@style/fabStyle"
+                    android:clickable="true"
+                    android:onClick="composeEmail"
+                    android:src="@drawable/ic_email_black_24"
+                    app:fabSize="normal"
+                    app:layout_anchor="@id/top"
+                    app:layout_anchorGravity="bottom|left|end" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fabCall"
+                    style="@style/fabStyle"
+                    android:clickable="true"
+                    android:onClick="dialNumber"
+                    android:src="@drawable/ic_call_black_24"
+                    app:fabSize="normal"
+                    app:layout_anchor="@id/top"
+                    app:layout_anchorGravity="bottom|right|end" />
+
+                <ImageButton
+                    android:id="@+id/bizLogo"
+                    style="@style/bizLogoStyle"
+                    app:layout_anchor="@id/top"
+                    app:layout_anchorGravity="bottom|center" />
 
                 <LinearLayout
-                    android:id="@+id/top"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.75"
-                    android:background="@drawable/background_cb"
-                    android:orientation="vertical" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.25"
-                    android:background="#ffffff"
-                    android:orientation="vertical" />
-            </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/top"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.75"
+                        android:background="@drawable/background_cb"
+                        android:orientation="vertical" />
 
-        </android.support.design.widget.CoordinatorLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.25"
+                        android:background="#ffffff"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/businessInfo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bizTitle"
+                style="@style/bizTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bizTitleMessage" />
+
+            <TextView
+                android:id="@+id/bizSubtitle"
+                style="@style/bizSubtitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bizSubtitleMessage" />
+
+            <TextView
+                android:id="@+id/bizDescription"
+                style="@style/bizDescriptionStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bizDescriptionMessage" />
+
+            <TextView
+                android:id="@+id/bizEmail"
+                style="@style/bizEmailStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="composeEmail"
+                android:text="@string/bizEmailMessage" />
+
+            <TextView
+                android:id="@+id/bizPhone"
+                style="@style/bizPhoneStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="dialNumber"
+                android:text="@string/bizPhoneMessage" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/businessInfo"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.6"
-        android:background="@android:color/white"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/bizTitle"
-            style="@style/bizTitleStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/bizTitleMessage" />
-
-        <TextView
-            android:id="@+id/bizSubtitle"
-            style="@style/bizSubtitleStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/bizSubtitleMessage" />
-
-        <TextView
-            android:id="@+id/bizDescription"
-            style="@style/bizDescriptionStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/bizDescriptionMessage" />
-
-        <TextView
-            android:id="@+id/bizEmail"
-            style="@style/bizEmailStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/bizEmailMessage"
-            android:linksClickable="true"
-            android:onClick="composeEmail"/>
-
-        <TextView
-            android:id="@+id/bizPhone"
-            style="@style/bizPhoneStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/bizPhoneMessage"
-            android:linksClickable="true"
-            android:onClick="dialNumber"/>
-
-    </LinearLayout>
-
-</LinearLayout>
-
-    </ScrollView>
+</ScrollView>
